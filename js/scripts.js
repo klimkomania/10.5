@@ -5,7 +5,7 @@ function Button(text) {
 Button.prototype = {
 	create: function() {
 		var self = this;
-		this.$element = $("button");
+		this.$element = $("<button>");
 		this.$element.text(this.text);
 		this.$element.appendTo($("body"));
 		this.$element.click(function() {
